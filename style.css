@@ -17,6 +17,7 @@ header .container nav .left {
 header .container nav .right ul {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 header .container nav .right ul li {
@@ -27,10 +28,9 @@ header .container nav .right ul li {
 
 header .container nav .right ul li a {
     color: #a9aaae;
-    
     margin-left: 25px;
-    
     font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
 }
 
 .banner {
@@ -262,11 +262,176 @@ header .container nav .right ul li a {
 .stories .cases {
     display: flex;
     flex-direction: column;
+    padding: 25px 200px;
 }
 
 .stories .cases .case {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    margin-top: 35px;
 }
 
+.stories .cases .case img {
+    margin-right: 30px;
+
+    border-radius: 10px;
+}
+
+.stories .cases .case span {
+    color: #c3bfc7;
+    text-transform: uppercase;
+}
+
+.stories .cases .case p {
+    margin: 0;
+    color: #646d7d;
+}
+
+.stories .cases .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.stories .cases .button a{
+    background: #ab99b9;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 40px;
+}
+
+.partners {
+    background: #e8f0f2;
+}
+
+.partners .container {
+    padding: 100px 0; 
+}
+
+.partners .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.partners .logos img {
+    width: 150px;
+    transition: 1s;
+}
+
+.partners .logos img:hover {
+    width: 200px;
+    transition: 1s;
+
+    background: #FFFFFF;
+
+    padding: 25px;
+
+    border-radius: 20px;
+}
+
+.begin {
+    background: #5fd574;
+    text-align: center;
+    padding: 100px;
+}
+
+.begin .container {
+    color: #FFFFFF;
+}
+
+.begin .container .text {
+    margin-bottom: 40px;
+}
+
+.begin .container .input {
+    display: flex;
+    padding: 0 50px;
+}
+
+.begin .container input {
+    height: 50px;
+    width: 90%;
+    border-radius: 40px 0 0 40px;
+
+    text-indent: 10px;
+
+    border: none;
+
+    outline: none;
+
+    transition: 1s;
+
+    background: #fffefe;
+}
+
+.begin .container input:focus {
+    background: #e9e8e8;
+    transition: 1s;
+}
+
+.begin .container button {
+    border-radius: 0 40px 40px 0;
+    border: none;
+
+    width: 10%;
+
+    background: #3fc055;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    outline: none;
+
+    transition: 1s;
+}
+
+.begin .container button:hover{
+    background: #308f40;
+    transition: 1s;
+}
+
+footer {
+    background: #222838;
+    color: #FFFFFF;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 0;
+}
+
+footer .container .right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+}
+
+footer .container .right .shortcut {
+    width: 100%;
+}
+
+footer .container .right .social {
+    width: 50%;
+}
+
+footer .container .right ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer .container .right img {
+    width: 25px;
+}
