@@ -1,5 +1,6 @@
 * {
     font-family: 'Varela Round', sans-serif;
+    text-decoration: none !important;
 }
 
 header {
@@ -317,18 +318,12 @@ header .container nav .right ul li a {
 }
 .partners .logos img {
     width: 150px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .partners .logos img:hover {
     width: 200px;
-    transition: 1s;
-
-    background: #FFFFFF;
-
-    padding: 25px;
-
-    border-radius: 20px;
+    transform: scale(1);   
 }
 
 .begin {
