@@ -1,0 +1,272 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    background: #232838;
+    padding: 50px;
+
+    font-size: 18px;
+}
+
+header .container nav .left {
+    color: #a9aaae;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header .container nav .right ul {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav .right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .container nav .right ul li a {
+    color: #a9aaae;
+    
+    margin-left: 25px;
+    
+    font-family: 'Varela Round', sans-serif;
+}
+
+.banner {
+    background: #232838;
+
+    font-family: 'Varela Round', sans-serif;
+
+    text-align: center;
+    padding: 20px 0 100px 0;
+}
+
+.banner h1 {
+    color: #ffffff;
+    margin: 25px 0;
+
+    font-size: 60px;
+}
+
+.banner p {
+    color: #8e9095;
+    margin: 15px 0;
+}
+
+.banner span {
+    color: #bcbdc2;
+}
+
+.banner .buttons{
+    margin-top: 50px;
+}
+
+.banner .button{
+    background: #3dc054;
+    padding: 18px;
+    border-radius: 40px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    margin-right: 10px;
+}
+
+.banner .link{
+    margin-left: 10px;
+    color:  #bcbdc2;
+}
+
+.apresentation {
+    background: #1e9fb4;
+    padding: 60px 0;
+}
+
+.apresentation .title {
+    padding: 50px;
+
+    text-align: center;
+}
+
+.apresentation .title h2 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.apresentation .title p {
+    color: #84c2cf;
+
+    font-size: 24px;
+
+    padding: 0 20px;
+
+    margin: 10px 0;
+}
+
+.apresentation .features {
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+.apresentation .features .api {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentation .features .api img{
+    background: #1a8799;
+    padding: 50px;
+
+    border-radius: 25%;
+}
+
+.apresentation .features .api .text {
+    margin-top: 30px;
+}
+
+.apresentation h3 {
+    color: #ffffff;
+}
+
+.apresentation .features p {
+    padding: 0 25px;
+    color: #84c2cf;
+    font-size: 18px;
+}
+
+.price-analytics {
+    background: #f6f8f9;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.price-analytics .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price-analytics .container .text {
+    text-align: left;
+}
+
+.price-analytics .container .text h4 {
+    font-size: 40px;
+}
+
+.price-analytics .container .text span {
+    text-transform: uppercase;
+    color: #b3bdbe;
+    font-weight: 700;
+}
+
+.price-analytics .container .text p {
+    color: #646d7d;
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-top: 15px;
+}
+
+.price-analytics .container .text .explanation {
+    margin-top: 20px;
+}
+
+.price-analytics .container .text .testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 15px 30px;
+}
+
+.product-details {
+    background: #967fa8;
+    padding: 80px 0;
+}
+
+.product-details .container {
+    display: flex;
+    align-items: center;
+}
+
+.product-details .container .image{
+    background: #a692b5;
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.product-details .container .image img {
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 5px 21px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 5px 21px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 21px 1px rgba(0,0,0,0.1);
+}
+
+.product-details .container .text {
+    padding: 40px;
+}
+
+.product-details .container .text h4 {
+    font-size: 40px;
+    color: #f8f7f9;
+}
+
+.product-details .container .text span {
+    text-transform: uppercase;
+    color: #b3bdbe;
+    font-weight: 700;
+}
+
+.product-details .container .text p {
+    color: #d4ccdb;
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-top: 15px;
+}
+
+.product-details .container .text explanation {
+    margin-top: 20px;
+}
+
+.product-details .container .text .button {
+    margin-top: 70px;
+}
+
+.product-details .container .text .button a {
+    padding: 15px 30px;
+    background-color: #ab99b9;
+    color: #FFFFFF;
+    border-radius: 40px;
+}
+
+.stories {
+    background: #f6f8f9;
+    padding: 70px;
+}
+
+.stories h4 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.stories .cases {
+    display: flex;
+    flex-direction: column;
+}
+
+.stories .cases .case {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
