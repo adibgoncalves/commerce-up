@@ -1,33 +1,37 @@
 * {
     font-family: 'Varela Round', sans-serif;
     text-decoration: none !important;
+
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    display: flex; 
-    flex-flow: wrap; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100vw; 
-    height: 90px;
+    overflow-x: hidden;
+    width: 100vw;
+    background: #232838;
 }
 
-header img {
-    height: 70px;
-    margin-right: auto;
-    margin-left: 0;
+header nav .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header div {
-    width: 90%; 
-    height: 100vh; 
-    position: fixed; 
-    left: 0; 
-    top: 0; 
-    background: #fff; 
-    display: none; 
-    flex-flow: column;
-    z-index: -1;
+header nav .left img {
+    width: 200px;
+}
+
+header nav .left a {
+    display: none;
+}
+
+header nav .left hr {
+    display: none;
+}
+
+header nav ul li {
+    text-align: right;
 }
 
 .banner {
@@ -138,6 +142,12 @@ header div {
     background: #1a8799;
     padding: 20px;
     border-radius: 25%;
+}
+
+.apresentation .features .api .gear img,
+.apresentation .features .api .pizza img,
+.apresentation .features .api .market img {
+    width: 50px;
 }
 
 
@@ -462,7 +472,7 @@ footer .container .right .social {
 }
 
 footer .container .copyright {
-    margin: 30px 0
+    margin: 100px 0 30px 0;
 }
 
 footer .container .right i,
@@ -476,55 +486,8 @@ footer .container .right .shortcut a:hover {
     color: #5fd574;
 }
 
-@media (min-width: 600px) {
-    .apresentation .features .api .gear img,
-    .apresentation .features .api .pizza img,
-    .apresentation .features .api .market img {
-        width: 50px;
-    }
-}
-
 @media (min-width: 992px) {
-    header {
-        background: #232838;
-        padding: 50px;
-        font-size: 18px;
-    }
     
-    header .container nav .left {
-        color: #a9aaae;
-        font-family: 'Varela Round', sans-serif;
-    }
-    
-    header .container nav .right ul {
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
-    
-    header .container nav .right ul li {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-    
-    header .container nav .right ul li a {
-        color: #a9aaae;
-        margin-left: 25px;
-        font-family: 'Varela Round', sans-serif;
-        cursor: pointer;
-    
-        transition: .5s;
-        transform: scale(1);
-    }
-    
-    header .container nav .right ul li a:hover {
-        color: #FFFFFF;
-    
-        border-radius: 20px;
-        transform: scale(1.2);
-    }
-
     .banner .buttons {
         margin: 25px 200px 0;
     }
@@ -558,45 +521,61 @@ footer .container .right .shortcut a:hover {
 @media (min-width: 1200px) {
 
     header {
-        background: #232838;
-        padding: 50px;
-        font-size: 18px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    header nav {
+        display: flex !important;
+        justify-content: space-between !important;
     }
     
-    header .container nav .left {
-        color: #a9aaae;
-        font-family: 'Varela Round', sans-serif;
-    }
-    
-    header .container nav .right ul {
+    header nav .left {
         display: flex;
+        justify-content: center;
         align-items: center;
+
+        margin-right: 150px;
+    }
+
+    header nav .left a {
+        text-transform: none;
+        color: #FFFFFF;
+        margin-left: 15px;
+        transition: .5s;
+    }
+
+    header nav .left a:hover {
+        color: #3dc054;
+    }
+
+    header nav .left hr {
+        width: 2px;
+        height: 39px;
+        background: #646c80;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul {
         margin: 0;
     }
-    
-    header .container nav .right ul li {
-        list-style: none;
-        display: flex;
-        align-items: center;
+
+    header nav ul li {
+        margin-right: 15px;
     }
-    
-    header .container nav .right ul li a {
-        color: #a9aaae;
-        margin-left: 25px;
-        font-family: 'Varela Round', sans-serif;
-        cursor: pointer;
-    
-        transition: .5s;
+
+    header nav ul li a {
         transform: scale(1);
+        transition: .5s;
     }
-    
-    header .container nav .right ul li a:hover {
-        color: #FFFFFF;
-    
-        border-radius: 20px;
+
+    header nav ul li a:hover {
         transform: scale(1.2);
     }
-    
+
     .banner {
         background: #232838;
     
@@ -884,6 +863,7 @@ footer .container .right .shortcut a:hover {
     
     .stories .cases .case {
         display: flex;
+        flex-direction: row;
         align-items: center;
         margin-top: 35px;
     
@@ -1049,7 +1029,7 @@ footer .container .right .shortcut a:hover {
         justify-content: space-between;
         align-items: center;
     
-        padding: 100px 0;
+        padding: 50px 0;
     }
     
     footer .container .right {
